@@ -23,6 +23,7 @@ jobs:
 
       - name: npm install, build, and test
         run: |
+          cd frontend
           npm install
           npm run build --if-present
           npm run test --if-present
@@ -52,5 +53,5 @@ jobs:
         with:
           app-name: 'anaMern1'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BABA8AB7786D4AFF8D737D7F27F64D1A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2245A4C867047C1AC792D7001323E19 }}
           package: .
